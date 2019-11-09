@@ -11,10 +11,22 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/index', function () {
+Route::get('index', function () {
     return view('index');
+});
+Route::get('about', function () {
+    return view('about');
+});
+Route::get('contacts', function () {
+    return view('contacts');
+});
+Route::get('layout', function () {
+    return view('layout');
+});
+Route::get('registration', function () {
+    return view('registration');
 });
